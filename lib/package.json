@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css -w"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "@sweetalert2/themes": "^5.0.15"
+  }
+}

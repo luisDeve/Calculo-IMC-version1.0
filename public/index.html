@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../lib/dist/output.css" />
+  <link rel="stylesheet" href="../lib/swettalert/dark.css" />
+  <title>Document</title>
+</head>
+<body>
+  <div class="contenedor bg-gray-dark w-full h-screen">
+    <h1 class="contenedor__texto text-center mb-8 text-white-light ">IMC Calculadora</h1>
+    <div
+      class="contenedor__chico bg-white-light w-11/12 flex justify-center xl:w-4/5 h-64 xl:h-96 rounded-sm m-auto relative xl:top-20 shadow-md shadow-black-dark">
+      <div class="contenedor__datos flex flex-wrap justify-center w-5/6 xl:w-11/12 absolute top-10">
+        <p class="contenedor__peso text-gray-dark my-4 text-xl">
+          Peso <input type="text" class="peso border-white-light" />
+        </p>
+        <p class="contenedor__peso text-gray-dark my-4 text-xl">
+          Altura <input type="text" class="altura" />
+        </p>
+        <button class="contenedor__boton py-2 px-2 bg-black-dark rounded-md text-white-light">
+          Calcular Peso
+        </button>
+      </div>
+    </div>
+    <div class="contenedor__datos flex justify-center gap-8 my-4">
+      <h2 class="contenedor__categoria text-white-light">
+        categoria
+        <span class="categoria block"></span>
+      </h2>
+      <h2 class="contenedor__IMC text-white-light">
+        Calculo IMC
+        <span class="IMC block"></span>
+      </h2>
+    </div>
+    <p class="text-white-light">Recomendacion</p>
+    <div class="contenedor__recomendacion overflow-y-auto h-56 mb-8"></div>
+  </div>
+  <script src="app/app.js" type="module"></script>
+  <script src="../lib/swettalert/sweetalert2.min.js"></script>
+</body>
+
+</html>
